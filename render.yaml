@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sillytavern
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js --listen --port $PORT
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
